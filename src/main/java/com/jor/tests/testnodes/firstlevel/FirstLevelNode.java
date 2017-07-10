@@ -16,7 +16,7 @@ import org.openide.nodes.Children;
 class FirstLevelNode extends BeanNode<FirstLevelBean> {
 	
 	public FirstLevelNode(FirstLevelBean bean) throws IntrospectionException {
-		super(Children.create(new FirstLevelNodeFactory(),true));
+		super(bean, Children.LEAF);
 		setDisplayName(bean.getName());
 	}
 	
