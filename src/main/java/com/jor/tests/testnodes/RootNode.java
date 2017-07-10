@@ -8,7 +8,7 @@ import org.openide.nodes.Children;
  *
  * @author jor
  */
-@ServicesTabNodeRegistration(displayName = )
+@ServicesTabNodeRegistration(displayName = "",name = "" )
 public class RootNode extends AbstractNode {
 	
 	public RootNode(Children children) {
