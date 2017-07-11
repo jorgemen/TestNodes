@@ -1,7 +1,7 @@
 package com.jor.tests.testnodes;
 
 import com.jor.tests.testnodes.firstlevel.NewFirstLevelNodeAction;
-import com.jor.tests.testnodes.firstlevel.FirstLevelNodeFactory;
+import com.jor.tests.testnodes.firstlevel.FirstLevelChildFactory;
 import javax.swing.Action;
 import org.netbeans.api.core.ide.ServicesTabNodeRegistration;
 import org.openide.actions.NewAction;
@@ -19,7 +19,7 @@ import org.openide.util.datatransfer.NewType;
 public class RootNode extends AbstractNode {
 	
 	public RootNode() {
-		super(Children.create(new FirstLevelNodeFactory(),true));
+		super(Children.create(new FirstLevelChildFactory(),true));
 		setDisplayName("Root");
 		setIconBaseWithExtension("com/jor/tests/testnodes/hpe.png");
 		

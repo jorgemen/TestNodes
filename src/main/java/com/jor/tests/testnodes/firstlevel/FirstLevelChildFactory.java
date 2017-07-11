@@ -21,19 +21,19 @@ import org.openide.util.NbPreferences;
  *
  * @author jor
  */
-public class FirstLevelNodeFactory extends ChildFactory.Detachable<FirstLevelBean> {
+public class FirstLevelChildFactory extends ChildFactory.Detachable<FirstLevelBean> {
 
 	private final List<FirstLevelBean> list;
 
 	private ChangeListener listener;
 
-	public FirstLevelNodeFactory() {
+	public FirstLevelChildFactory() {
 		list = new ArrayList<>();
 	}
 
 	@Override
 	protected boolean createKeys(List<FirstLevelBean> toPopulate) {
-		list.addAll(toPopulate);
+		toPopulate.addAll(list);
 		return true;
 	}
 
